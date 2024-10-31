@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌦</text></svg>" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verkefni 9 — sýnilausn</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/index.js"></script>
+</head>
+
+<body>
+  <h1>Veðurspá</h1>
+  <p>Veldu stað til að sjá hita- og úrkomuspá.</p>
+
+  <button id="getLocation">Fá veðurspá fyrir minn stað</button>
+
+  <button id="reykjavik">Fá veðurspá fyrir Reykjavík</button>
+  <button id="akureyri">Fá veðurspá fyrir Akureyri</button>
+
+  <div id="weatherResults" style="display: none;">
+    <h2 id="locationName"></h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Klukkustund</th>
+          <th>Hitastig (°C)</th>
+          <th>Úrkoma (mm)</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody">
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.forecast {
+  width: 100%;
+  /* Ensures the table takes full width */
+  border-collapse: collapse;
+  /* Merges borders for a cleaner look */
+  margin-top: var(--spacing);
+  /* Adds space above the table */
+}
+
+.forecast th,
+.forecast td {
+  border: 1px solid #dddddd;
+  /* Light gray border for clarity */
+  padding: calc(var(--spacing) / 2);
+  /* Consistent padding */
+  text-align: left;
+  /* Aligns text to the left */
+  vertical-align: middle;
+  /* Centers content vertically */
+}
+
+.forecast th {
+  background-color: var(--color-light-gray);
+  /* Header background */
+  font-weight: bold;
+  /* Makes header text bold */
+}
+
+.forecast tbody tr:nth-child(odd) {
+  background-color: var(--color-background-zebra);
+  /* Zebra striping for odd rows */
+}
+
+.forecast tbody tr:hover {
+  background-color: rgba(100, 100, 255, 0.1);
+  /* Light blue hover effect */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+
+  .forecast th,
+  .forecast td {
+    font-size: 0.9rem;
+    /* Slightly smaller text on small screens */
+    padding: calc(var(--spacing) / 4);
+    /* Less padding for compactness */
+  }
+}
